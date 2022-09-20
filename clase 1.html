@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="style">
+           
+    <title>crear contraseña</title>
+    <style>
+       
+        :root{
+ --white: #ffffff;
+--black:#000000;
+--very-light-pink:#C7C7C7;
+--Text-input-field:#f7f7f7;
+--hospital-green:#acd982;
+--sm:14px;
+--md:16px;
+--lg:18px;
+}
+      
+        body{
+            margin:0;
+            font-family: 'Quicksand', sans-serif;}
+
+        .contenedorprincipal{
+            width:100%;
+            height:100vh;
+            display:grid;
+            place-items: center;}
+
+        .contenedorespecifico{
+            width:300px;
+            display:grid;
+            grid-template-rows: auto 1fr auto; }
+        
+        img.logo{
+            justify-self: center;
+            width:150px;
+            margin-bottom: 30px;
+        display:none;
+    }
+
+        .titulo{
+            font-size: var(--lg);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .subtitulo{
+            font-size: var(--md);
+            color: var(--very-light-pink);
+            text-align: center;
+            margin-top:0;
+            margin-bottom: 13px;
+            
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+       label{
+        font-size: var(--md);
+        font-weight: bolder;
+        }
+        input{
+            background-color: rgb(212, 206, 206);
+            border-radius: 8px;
+            padding:12px;
+            height:20px;
+            border:none;
+            margin:4px;
+
+        }
+      .botondeconfirmar{
+            border:none;
+            border-radius:8px;
+            height:40px;
+            width:100%;
+            background-color: var(--hospital-green);
+            color:#f7f7f7;
+            font-weight: bolder;
+            font-size: var(--md);
+            cursor:pointer;
+            margin-top:8px;
+            margin-bottom:8px;
+        }
+
+        @media (max-width:640px){
+            img .logo{
+               display:flex;
+
+            }
+            
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="contenedorprincipal">
+        <div class="contenedorespecifico">
+            <img src="./fencelogo.png" alt="logo" class="logo">
+            <h1 class="titulo">CREATE YOUR PASSWORD</h1>
+            <p class="subtitulo">Enter a new password for your account</p>
+
+          <form action="/" class="form">
+                 <label for="labelpassword" class="password">Password</label>
+                 <input type="password" id="ingresatucontraseña" placeholder="######" class="rellena">
+
+<label for="password" class="labelnewpassword">Re-enter Password</label>
+                 <input type="password" class="ingresatunuevacontraseña" placeholder="######" class="rellenalanueva">
+             
+        <input type="submit" class="botondeconfirmar" value="Confirmar">
+          </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
